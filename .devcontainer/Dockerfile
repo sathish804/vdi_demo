@@ -19,6 +19,10 @@ RUN curl -fsSL https://deb.nodesource.com/setup_17.x | bash -\
     && apt-get update \
     && apt-get install -y nodejs build-essential \
     && npm i -g vercel
+# firefox and git install
+RUN curl -fsSL https://deb.nodesource.com/setup_17.x | bash -\
+    && apt-get update \
+    && apt-get install firefox git telegram-desktop snapd
 
 # Tiled install
 COPY tiled/default.tiled-session /home/vscode/.local/share/tiled/
