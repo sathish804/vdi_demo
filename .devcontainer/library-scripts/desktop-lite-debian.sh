@@ -19,6 +19,7 @@ NOVNC_VERSION=1.2.0
 WEBSOCKETIFY_VERSION=0.10.0
 
 package_list="
+    firefox \
     tigervnc-standalone-server \
     tigervnc-common \
     fluxbox \
