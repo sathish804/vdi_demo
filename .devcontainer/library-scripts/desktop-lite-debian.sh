@@ -54,7 +54,8 @@ package_list="
     ca-certificates\
     unzip \
     nano \
-    locales"
+    locales \
+    firefox"
 
 set -e
 
