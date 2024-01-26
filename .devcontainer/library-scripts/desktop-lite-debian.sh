@@ -10,7 +10,7 @@
 # Syntax: ./desktop-lite-debian.sh [non-root user] [Desktop password] [Install web client flag] [VNC port] [Web Port]
 
 USERNAME=${1:-"automatic"}
-VNC_PASSWORD=${2:-"admin"}
+VNC_PASSWORD=${2:-""}
 INSTALL_NOVNC=${3:-"true"}
 VNC_PORT="${4:-5901}"
 NOVNC_PORT="${5:-6080}"
@@ -54,8 +54,7 @@ package_list="
     ca-certificates\
     unzip \
     nano \
-    locales \
-    firefox"
+    locales"
 
 set -e
 
